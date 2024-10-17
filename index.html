@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Coding - Rizky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #top {
+            background: #19334a;
+            color: #ff0000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+
+        #project li {
+            margin: 15px 0;
+            height: 150px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        #project a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #ff0000e1;
+            font-size: 22px;
+            text-decoration: none;
+        }
+
+        #project li:hover {
+            transform: scale(1.02);
+        }
+
+        .bg-zoo {
+            background: url("https://images.unsplash.com/photo-1503918756811-975bd3397178?auto=format&fit=crop&w=687&q=80") no-repeat center;
+            background-size: cover;
+        }
+
+        .bg-table {
+            background: url("https://images.unsplash.com/photo-1487611459768-bd414656ea10?auto=format&fit=crop&w=1470&q=80") no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <h1>Basic Coding - Rizky</h1>
+        <h3>Examples of Web Pages with HTML and CSS</h3>
+    </header>
+    <main class="container">    
+        <section id="project">
+            <ul>
+                <li class="bg-zoo"><a href="xyz-zoo/">xyz-zoo</a></li>
+                <li class="bg-table"><a href="table-form/">table-form</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
