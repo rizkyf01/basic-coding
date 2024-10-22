@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ebddd9;
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+header {
+  background: url(asset/zoo.jpg) center/cover no-repeat;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(68, 54, 54, 0.678);
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 100px;
+  z-index: 10;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.animal-list {
+  margin: 25px 0;
+  padding: 0;
+  counter-reset: list-item;
+}
+
+.animal-list > li {
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  padding: 20px;
+}
+
+.animal-list > li::before {
+  content: counter(list-item) ". ";
+  counter-increment: list-item;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.animal-list h2, .animal-list h3 {
+  margin: 0;
+  color: black;
+  text-align: left;
+}
+
+.animal-list h2 {
+  font-size: 20px;
+}
+
+.animal-list h3 {
+  font-size: 15px;
+}
+
+.animal-list > li > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.animal-list > li > ul li {
+  width: 40%;
+  list-style: none;
+  margin: 10px;
+}
+
+.animal-list img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+footer.source {
+  background: #00ffff;
+  display: flex;
+  align-items: center;
+  padding: 1px 0;
+  justify-content: center;
+}
+
+footer.source h2 {
+  color: #343a42;
+  margin-right: 30px;
+}
+
+footer.source ol {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+footer.source ol li {
+  margin-right: 40px;
+  color: #001c2c;
+}
